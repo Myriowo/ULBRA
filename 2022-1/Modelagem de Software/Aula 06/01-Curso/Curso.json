@@ -1,0 +1,31 @@
+{
+    "id": 1,
+    "nome": "ADS",
+    "descricao": "Análise e Desenvolvimento de Sistemas",
+        "Turma":[
+        {
+            "id": 1,
+            "nome": "Banco de Dados",
+            "descricao": "Banco de Dados II",
+            "professor": "Cassio",
+                "Matricula":[
+                {
+                    "id": 1,
+                    "situacao": true,
+                    "data_matricula": "2022-02-05",
+                        "Aluno":[
+                        {
+                            "id": 1,
+                            "nome": "Murilo Julio Ferreira",
+                            "data_nascimento": "1954-03-12",
+                            "cpf": "70005583500",
+                            "matricula": "223456172734",
+                            "endereco": "Quadra QN 401 Conjunto N, 755, Samambaia Norte (Samambaia), Brasília, DF"
+                        }
+                        
+                    ]            
+                }
+            ]     
+        }
+    ]
+}
