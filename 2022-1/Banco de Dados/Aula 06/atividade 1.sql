@@ -1,22 +1,47 @@
+/* c. Criar UMA view que dê condições dos exercícios abaixo: */
 CREATE VIEW orcamentos_view 
-AS SELECT oi.id_orc, oi.id_prod, data_or, status_or, valor unit, qtd, valor_total_item
-FROM orcamentos_itens oi INNER JOIN orcamentos o ON oi.id_orc = o.id
-	INNER JOIN produtos p ON oi.id_prod = p.id;
+AS SELECT
+FROM orcamentos o INNER JOIN orcamentos_itens oi ON o.id = oi.id_orc
+				  INNER JOIN produtos p ON oi.id_prod = p.id 	
 
+/* 1. Lista de orçamentos por produto. */
+SELECT p.nome as Produto, id_prod as ID
+FROM orcamentos_view
+GROUP BY id_prod, nome
 
+/* 2. Valor total de produtos orçado por período.*/
 SELECT SUM(valor_total_item) as total
 FROM orcamentos_view
-WHERE o.data_orc BETWEEN '2014-07-01' AND '20140-07-30'
+WHERE data_orc BETWEEN '2014-07-01' AND '2014-07-30'
 
-SELECT *
+/* 3. Produtos que tem "Computador" no nome e que tem quantidade em estoque. */
+SELECT id_orc, data_orc, status_or
 FROM orcamentos_view
-WHERE nome LIKE 'Computador%'
+WHERE nome LIKE 'Computador%' AND p.saldo IS NOT NULL 
 
 /* 4. Os 10 produtos mais orçados no mês de setembro de 2014 e que ainda tem saldo em estoque. Somente os produtos com o valor acima de R$ 500.00.*/
-SELECT id_prod, nome COUNT(id_prod) as quantas_vezes
+SELECT id_prod, nome, COUNT(id_prod) as quantas_vezes
 FROM orcamentos_view
-WHERE o.data_orc BETWEEN '2014-07-01' AND '20140-07-30'
+WHERE o.data_orc BETWEEN '2014-09-01' AND '20140-09-30'
 AND saldo > 0 AND valor > 500
-
+GROUP BY id_prod, nome
 ORDER BY quantas_vezes DESC
 LIMIT 10
+
+/* d. Faça uma consulta utilizando a view para acrescentar 20% nos produtos que o saldo em estoque é menor ou igual a 5.*/
+SELECT 
+FROM
+WHERE
+
+/* e. Delete todos os produtos que não foram orçados.*/
+DELETE *
+FROM produtos p INNER JOIN orcamentos_itens oi ON p.id = oi.id_prod
+WHERE p.id NOT IN oi.id_prod
+
+/* f. Explique quando utilizar o GROUP BY, com exemplo SQL.*/
+/* Com o Group by podemos agrupar os valores de uma coluna e também realizar cálculos sobre esses valores.*/
+SELECT p.nome as produto, oi.id_prod as ID_produto, oi.qtd as quantos
+FROM orcamentos_view
+WHERE oi.qtd > 2
+GROUP BY p.nome
+ORDER BY quantos DESC
