@@ -45,3 +45,25 @@ FROM orcamentos_view
 WHERE oi.qtd > 2
 GROUP BY p.nome
 ORDER BY quantos DESC
+
+/* g. Explique quando utilizar o HAVING, com exemplo SQL.*/
+/* É usada pra filtrar condições em grupos ou agregações, é frequentemente usada junto com GROUP BY.*/
+SELECT colunas, função_agregação()
+FROM tabela
+WHERE filtro
+GROUP BY colunas
+HAVING filtro_agrupamento
+
+/* h. Explique quando utilizar o UNION, com exemplo SQL.*/
+/* Uma UNION combina duas ou mais SELECT. O resultado de cada SELECT deve possuir o mesmo número de colunas, e o tipo de dado de cada coluna correspondente deve ser compatível.*/
+SELECT declaração_1
+UNION [ALL}
+SELECT declaração_2
+UNION [ALL}
+
+/* i. Explique quando utilizar o LEFT JOIN, com um exemplo SQL.*/
+/* Retorna todas as linhas da tabela à esquerda, mesmo se não houver nenhuma correspondência na tabela à direita, incluindo os dados NULL.*/
+SELECT colunas
+FROM tabela_esq
+LEFT JOIN tabela_dir
+ON tabela_esq.coluna=tabela_dir.coluna;
