@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(240 , 240, 240);
+}
+
+.header{
+    height: 100px;
+    background-color: #162E58;
+    color: white;
+    padding: 10px;
+}
+
+.header h1{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.header h2{
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+.grupos{
+    width: 60%; /* Tabela ocupando 60% */
+    margin: auto;
+    background-color: white;
+}
+
+.grupos h3{
+    padding-top: 20px;
+}
+
+
+table{
+    width: 100%;
+    text-align:center;
+}
+
+table,th,td,tr{
+    border-top: 0.5px solid;
+    border-collapse:collapse;
+    border-color: #70757a;
+    padding: 5px;
+}
+
+th{
+    font-weight: normal;
+    color: #70757a;
+    font-size: 14px;
+}
+
+.img-clube{
+    width: 24px;
+    height: 24px;
+    
+}
+
+.gols, .cartoes {
+    width: 60%; /* Tabela ocupando 60% */
+    background-color: white;
+    margin: auto;
+}
+
+.gols h3, .cartoes h3{
+    background-color: #162E58;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img-jogador{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}

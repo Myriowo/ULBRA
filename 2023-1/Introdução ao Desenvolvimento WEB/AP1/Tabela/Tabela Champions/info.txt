@@ -1,0 +1,20 @@
+Informações coletadas do site
+
+Fonte Arial
+Títulos 16px
+
+
+Cor de fundo da header
+background-color: #162E58;
+
+Cor de fundo da tabela.
+background: rgb(240 , 240, 240);
+
+Borda primeiro e segundo 
+#4285F4;
+
+Borda Terceiro
+#FA7B17
+
+Cor cabeçalho tabela
+color: #70757a;
