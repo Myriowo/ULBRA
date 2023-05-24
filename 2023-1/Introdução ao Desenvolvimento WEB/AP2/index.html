@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+  <link rel="icon" href="/imgs/favicon.png" type="image/png">
+  <title>Patas e Trecos</title>
+</head>
+<body>
+  <!-- Barra de navegação -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <img src="/imgs/icon2.png">
+      <a class="navbar-brand" href="/index.html" style="padding-left: 10px;">Patas e Trecos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+
+        <div class="dropdown">
+          <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">Gatos</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/pages/alimentacaogato.html">Alimentação</a></li>
+              <li><a class="dropdown-item" href="/pages/areiasgato.html">Areias e Banheiros</a></li>
+              <li><a class="dropdown-item" href="/pages/arranhadoresgato.html">Arranhadores e Brinquedos</a></li>
+              <li><a class="dropdown-item disabled" href="#">Acessórios e Outros</a></li>
+              <li><a class="dropdown-item" href="/pages/farmaciagato.html">Farmácia</a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown">
+          <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">Cachorros</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/pages/alimentacaocachorro.html">Alimentação</a></li>
+              <li><a class="dropdown-item" href="/pages/petiscoscachorro.html">Petiscos</a></li>
+              <li><a class="dropdown-item" href="/pages/brinquedoscachorro.html">Brinquedos</a></li>
+              <li><a class="dropdown-item disabled" href="#">Acessórios e Outros</a></li>
+              <li><a class="dropdown-item" href="/pages/farmaciacachorro.html">Farmácia</a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown">
+          <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">Peixes</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/pages/alimentacaopeixes.html">Alimentação</a></li>
+              <li><a class="dropdown-item disabled" href="#">Tratamento de Água</a></li>
+              <li><a class="dropdown-item" href="/pages/aquariospeixes.html">Aquários e Acessórios</a></li>
+              <li><a class="dropdown-item disabled" href="#">Farmácia</a></li>
+            </ul>
+        </div>
+
+        </ul>
+      </div>
+    </div>
+
+    <!-- Button to Open the Modal -->
+    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#myModal">Login</button>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Login</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form class="d-flex flex-column w-100 mt-3 rounded bg-white text-black">
+            <label for="email2">Email:</label>
+            <input placeholder="Digite seu email" class="form-control" type="email" id="email2">
+
+            <label for="senha">Senha</label>
+            <input  placeholder="Digite sua senha" class="form-control" type="password">
+
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="remember"> Lembre-me
+            </label>
+              <input class="mt-3 btn btn-primary" type="submit">
+          </form>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+
+        </div>
+      </div>
+    </div>
+    
+  </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container mt-4 text-center">
+      <a href="index.html"><img src="imgs/logo.png" alt="Logo Patas e Trecos" class="img-fluid border-bottom"></a>
+    </div>
+    
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="imgs/car1.png" class="d-block w-100 h-200" alt="Carousel1">
+      </div>
+
+      <div class="carousel-item">
+        <a href="/pages/aquariospeixes.html"><img src="imgs/car2.png" class="d-block w-100 h-200" alt="Carousel2"></a>
+      </div>
+
+      <div class="carousel-item">
+        <img src="imgs/car3.png" class="d-block w-100 h-200" alt="Carousel3">
+      </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+
+    <!-- Cards -->
+    <div class="container mt-4">
+      <h5>Populares em Gatos</h5>
+      <div class="row mt-4" style="padding-left: 50px; padding-right: 50px;">
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <a href="/pages/alimentacaogato.html">
+            <img src="/imgs/gatos/gatos-ração.png" class="card-img-top" alt="Ração Seca Gatos"></a>
+            <div class="card-body">
+              <h5 class="card-title">Alimentação</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <a href="/pages/farmaciagato.html">
+            <img src="/imgs/gatos/gatos-antipulgas.jpg" class="card-img-top" alt="Antipulgas Gatos"></a>
+            <div class="card-body">
+              <h5 class="card-title">Antipulgas</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <a href="/pages/areiasgato.html">
+            <img src="/imgs/gatos/gatos-areia.png" class="card-img-top" alt="Areias Gatos"></a>
+            <div class="card-body">
+              <h5 class="card-title">Areias</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <a href="/pages/arranhadoresgato.html">
+            <img src="/imgs/gatos/gatos-arranhador.png" class="card-img-top" alt="Arranhadores Gatos"></a>
+            <div class="card-body">
+              <h5 class="card-title">Arranhadores</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h5>Populares em Cachorros</h5>
+      <div class="row mt-4" style="padding-left: 50px; padding-right: 50px;">
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <a href="/pages/alimentacaocachorro.html">
+            <img src="/imgs/cachorros/cachorros-racao.png" class="card-img-top" alt="Ração Cachorros"></a>
+            <div class="card-body">
+              <h5 class="card-title">Alimentação</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <a href="/pages/farmaciacachorro.html">
+            <img src="/imgs/cachorros/cachorros-antipulgas.jpg" class="card-img-top" alt="Antipulgas Cachorros"></a>
+            <div class="card-body">
+              <h5 class="card-title">Antipulgas</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <a href="/pages/petiscoscachorro.html">
+            <img src="/imgs/cachorros/cachorros-petiscos.png" class="card-img-top" alt="Petiscos Cachorros"></a>
+            <div class="card-body">
+              <h5 class="card-title">Petiscos</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <a href="/pages/brinquedoscachorro.html">
+            <img src="/imgs/cachorros/cachorros-brinquedos.png" class="card-img-top" alt="Brinquedos Cachorros"></a>
+            <div class="card-body">
+              <h5 class="card-title">Brinquedos</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="container">
+    <div class="row">
+    <div class="col-md-6">
+
+    <!-- Formulário -->
+    <div class="container mt-4">
+      <div class="d-flex justify-content-center">
+        <div class="form-container" style="max-width: 700px">
+          <form>
+            <h5>Junte-se à nossa comunidade de amantes de pets!</h5>
+
+            <div class="mb-3">
+              <label for="inputNome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="inputNome">
+            </div>
+
+            <div class="mb-3">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail">
+            </div>
+
+            <div class="mb-3">
+              <label for="inputSenha" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="inputSenha">
+            </div>
+
+            <div class="mb-3">
+              <label for="inputMensagem" class="form-label">Mensagem</label>
+              <textarea class="form-control" id="inputMensagem" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+    <div class="col-md-6">
+    <div class="container mt-4">
+      <img src="/imgs/sobre.png">
+    </div>
+    
+    </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<footer class="bg-dark text-light py-3">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6">
+        <h5>Contato</h5>
+        <p>Endereço: Rua dos Miados, 123</p>
+        <p>Telefone: (00) 1234-5678</p>
+        <p>Email: contato@patasetrecos.com</p>
+      </div>
+
+      <button type="button" class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#texto"></button>
+        <div id="texto" class="collapse">
+          <p>Parabéns! Você achou o cupom escondido! Use 10AUAUS para ganhar 10% de desconto na próxima compra!</p>
+        </div>
+  </div>
+</footer>
+</html>
