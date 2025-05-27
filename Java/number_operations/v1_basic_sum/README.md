@@ -1,0 +1,1 @@
+SumUpToN.java: Reads a positive integer and calculates the sum from 1 to n.
