@@ -1,0 +1,2 @@
+interleave_vectors: Reads two 10-element int arrays, builds a 20-element array with their values interleaved, then prints the three arrays.
+vector_extremes.c:  Reads 20 ints, reports max & min values with their first positions, plus the position of the first repeated value (if any).
