@@ -1,1 +1,0 @@
-price_classification.c: Calculates final product price based on category, base price, and storage need; classifies it as Barato, Normal, or Caro. 
