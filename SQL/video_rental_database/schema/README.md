@@ -1,0 +1,1 @@
+create-video-tables.sql: Defines the database schema for categories, films, actors, clients, etc.

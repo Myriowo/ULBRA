@@ -1,0 +1,1 @@
+project_management_schema: Contains full table structure for collaborators, projects, and teams.

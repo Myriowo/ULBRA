@@ -1,0 +1,1 @@
+medical_consultations_queries.sql: This file contains SQL queries to list medical consultations with doctor and patient details, and to find medications prescribed by a specific doctor during October 2021.

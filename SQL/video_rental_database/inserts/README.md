@@ -1,0 +1,1 @@
+insert-initial-data.sql: Populates the database with actors, clients, movies, and rentals.

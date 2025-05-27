@@ -1,0 +1,1 @@
+supplier_projects_schema.sql: This SQL file contains tables for managing suppliers, parts, institutions, projects, and supply records with proper foreign keys.

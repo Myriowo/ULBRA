@@ -1,0 +1,2 @@
+sales_queries.sql: Contains SQL SELECT queries to analyze customer behavior, product performance, and sales trends. Includes filters by date, top customers, and best-selling items.
+schema_and_data.sql: Defines the database schema and inserts sample data. Includes table creation for clientes, produtos, notas, and notas_itens, and data seeding for testing queries.

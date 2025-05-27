@@ -1,0 +1,1 @@
+rented-movies-view.sql: Creates a view showing rented movies and filters based on rental status.
